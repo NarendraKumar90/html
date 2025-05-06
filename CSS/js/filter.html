@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a=[2,3,5,8,7,9,4]
+        let s=a.filter(ls)
+        
+        let b=a.filter(flt)  // can not change the array only performed filteration operation like <,> values from the array
+        function flt(n){
+            if(n>5){
+                return n
+            }
+          
+        }
+          // print less than 5 elements
+        function ls(n){
+            if(n<5){
+                return n
+            }
+        }
+        // function sqr(n){
+        //      return n+n
+        // }
+        console.log("Orginal Array:"+a)
+        console.log("Filtered Array:"+b)
+        console.log("Squared Array:"+s)
+    </script>
+</head>
+<body>
+    <center>
+       <h1> Array Filter Function</h1>
+    </center>
+</body>
+</html>

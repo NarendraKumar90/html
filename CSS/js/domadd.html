@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            // alert("Hello")
+            let x=Number(document.getElementById("num1").value)
+            let y=Number(document.getElementById("num1").value)
+            let res=x+y
+            if(res>100 && res<200){
+                document.getElementById("ans").style.color="red"
+            }else if(res<=100 && res>=0){
+                document.getElementById("ans").style.color="green"  
+            }
+            else{
+                document.getElementById("ans").style.color="white"  
+            }
+            document.getElementById("ans").innerHTML=res
+            document.getElementById("bg").style.background="black"
+            document.getElementById("lb").style.color="white"
+        }
+    </script>
+</head>
+<body id="bg">
+    <center>
+        
+    <input type="number" placeholder="Enter Second Number" id="num1"><br>
+    <input type="number"  placeholder="Enter Second Number" id="num2"><br><br>
+        <input type="button" onclick="add()" value="ADD" >
+        <h1 id="lb">Addition is:</h1>
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>

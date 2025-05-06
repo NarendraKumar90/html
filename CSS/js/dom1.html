@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getnm(){
+          let name=document.getElementById("nm").value
+        //    alert("Hello "+name)
+           document.getElementById("snm").innerHTML=name
+           let clr=""
+           if(name=="red"){
+            clr=name
+           } else if(name=="blue"){
+                clr=name
+           } else if(name=="orange"){
+                clr=name
+           } else if(name=="green"){
+                clr=name
+           } else if(name=="aqua"){
+                clr=name
+           } else{
+            clr="black"
+            document.getElementById("snm").style.color="white"
+           }
+           document.getElementById("bg").style.background=clr
+        }
+
+        function add(){
+            // let p=prompt("Please enter your Nmae")
+            // alert("Hello"+p)
+            // let x=Number(document.getElementById("num1").value)
+            // let y=Number(document.getElementById("num2").value)
+            // let res=x+y
+            // document.getElementById("a").innerHTML=res
+        }
+       
+    </script>
+    <style>
+     
+    </style>
+</head>
+<body id="bg">
+    <center>
+        Name<input type="text" id="nm">
+        <input type="button" onclick="getnm()" value="Getname">
+        <h1 id="snm">This is Yours</h1>
+    </center>
+</body>
+</html>

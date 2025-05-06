@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let age = [12,33,55,60,75,17,13,25,28,40,68,88,92,22,7,9,39,23,44,25,27,29,25,55,82,83,73,23,45]
+        let child=0
+        let adult=0
+        let old=0
+        console.log("Total Guest is: "+age.length)
+        for(let i=0;i<age.length;i++){
+            // console.log(age[i])
+            if(age[i]<18){
+                child++
+            }
+            else if(age[i]<=40 && age[i]>=18){
+                adult++
+            }
+            else if(age[i]>40 ){
+                old++
+            }
+        }
+        console.log("Number of child: "+child)
+        console.log("Number of Adult: "+adult)
+        console.log("Number of Old: "+old)
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Case Study</h1>
+    </center>
+</body>
+</html>

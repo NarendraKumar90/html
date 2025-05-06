@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let str="aabbeeggeeaaeeggbbeaabgebage"
+        let acount=0
+        let bcount=0
+        let ecount=0
+        let gcount=0
+        for(let i=0;i<str.length;i++){
+            if("a"==str.charAt(i)){
+                acount++
+            }
+            else if("b"==str.charAt(i)){
+                bcount++
+            }
+            else if("e"==str.charAt(i)){
+                ecount++
+            }
+            else if ("g"==str.charAt(i))
+                gcount++
+            
+        }
+        console.log(acount+"a"+bcount+"b"+ecount+"e"+gcount+"g")
+    </script>
+</head>
+<body>
+    <center>
+        <h1>String question</h1>
+    </center>
+</body>
+</html>

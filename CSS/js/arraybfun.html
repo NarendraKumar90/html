@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr=[7,3,4,8,6,7,4,2]
+        let cnt=0
+        let i=0
+        console.log("Original array "+arr)
+        arr.push(56)
+        console.log("push add end "+arr)
+        arr.pop(56)
+        console.log("pop "+arr)
+        arr.unshift(87)
+        console.log("unshift add start "+arr)  //change the original array
+        arr.shift(77)
+        console.log("shift remove start "+arr)
+        console.log(arr.at(6))
+        console.log(arr.sort())
+        console.log(arr.slice(2,6))
+        
+
+
+
+        // for (let n of arr){
+        //   cnt++
+        //   if(n==7){
+        //     i++
+        //   }
+        // }
+        // console.log("7 Occures "+i+" Tmes")
+        // console.log("Length:"+cnt)
+        // console.log("Sorted array:"+arr.sort())
+        // console.log("Middle Element:"+arr.sort()[cnt/2])
+        // console.log("First Element:"+arr.sort()[0])
+        // console.log("Last Element:"+arr.sort()[cnt-1])
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Array Built in function</h1>
+    </center>
+</body>
+</html>

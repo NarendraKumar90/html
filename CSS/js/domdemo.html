@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function get(x){
+           // alert(x)
+           let name= document.getElementById("gnm").value
+            document.getElementById("snm").innerHTML=name
+            document.getElementById("bg").style.background=name
+        }
+    </script>
+</head>
+<body id="bg">
+    <center>
+        <h1> this is DOM Demo</h1>
+        <input type="text" id="gnm">
+        <input type="button" onclick="get(25)" value="GetName">
+        <h1 id="snm">You are here</h1>
+    </center>
+</body>
+</html>
